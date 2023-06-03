@@ -1,0 +1,195 @@
+/* ### Primary
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+## Gradients
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+### Neutral
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%) */
+
+.attribution { font-size: 11px; text-align: center; 
+    margin-top: 3em;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    margin: 0 auto;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+#container{
+    width:50%;
+    min-width: 540px;
+    max-width: 540px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1em;
+    display: flex;
+    margin-top: 5em;
+    box-shadow: 48px 52px 39px -58px rgba(120, 87, 255, 0.5);
+}
+#blue-div{
+    width: 50%;
+    max-width: 270px;
+    min-width: 270px;
+    border-radius: 1em;
+    background-image: linear-gradient(rgb(120, 87, 255),hsl(241, 81%, 54%));
+    padding-bottom: 2em;
+}
+#res-head p{
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+#res-circle{
+    box-sizing: border-box;
+    padding-top: 15px;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius:100%;
+    background-image: linear-gradient(hsl(256, 72%, 46%, 1),hsl(241, 72%, 46%, 0));
+}
+#res-total1{
+    font-size: 3em;
+    margin:0;
+    display: block;
+    margin: 0 auto;
+    color: hsl(221, 100%, 96%);
+}
+#res-total2{
+    margin: 0;
+    color: hsl(224, 30%, 27%);
+}
+#res-info{
+    text-align: center;
+    margin-top: 10px;
+    color: hsl(0, 0%, 100%);
+}
+#res-info p{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: hsl(241, 100%, 89%);
+}
+
+
+
+#white-div{
+    padding: 0 2.5%;
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 270px;
+    min-width: 270px;
+}
+#top-div{
+    box-sizing: border-box;
+    padding-left: 3%;
+    color: hsl(224, 30%, 27%, 90%);
+    font-weight: 900;
+}
+
+.boxes-1{
+    box-sizing: border-box;
+    margin-top: 1.3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1.5em;
+}   
+
+.img-cont{
+    width: 5%;
+}
+.res-tag{
+    width: 50%;
+}
+#div-reaction, #div-memory, #div-verbal, #div-visual{
+    border-radius: 10px;
+}
+#div-reaction{
+    background-color: hsl(0, 100%, 67%, 5%);
+    color: hsl(0, 100%, 67%);
+    padding-top: 5px;
+}
+#div-memory{
+    background-color:  hsl(39, 100%, 56%, 8%);
+    color:  hsl(39, 100%, 56%);
+    padding-top: 5px;
+}
+#div-verbal{
+    background-color: hsl(166, 100%, 37%, 8%);
+    color: hsl(166, 100%, 37%);
+    padding-top: 5px;
+}
+#div-visual{
+    background-color: hsl(234, 85%, 45%, 5%);
+    color: hsl(234, 85%, 45%);
+    padding-top: 5px;
+}
+.tag-num{
+    color:hsl(224, 30%, 27%, 90%);
+    font-weight: 700;
+}
+.tag-num .first-n{
+    color:hsl(224, 30%, 27%, 50%);
+}
+
+
+
+#bottom-div{
+    margin-top: 1em;
+}
+#button{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(hsl(224, 30%, 27%),hsl(224, 30%, 27%));
+    color: hsl(221, 100%, 96%);
+    border-radius: 50px;
+    line-height: 2.3em;
+    cursor: pointer;
+}
+#button:hover{
+    background-image: linear-gradient(hsl(256, 72%, 46%, 0.89),hsl(241, 81%, 54%));
+    color: hsl(221, 100%, 96%);
+}
+
+/* background-image: linear-gradient(hsl(256, 72%, 46%, 1),hsl(241, 72%, 46%, 0)); */
+@media (max-width:400px){
+    #container{
+        width:100%;
+        min-width: 375px;
+        max-width: 375px;
+        border-radius: 0;
+        display: flex;
+        margin-top: 0;
+        box-shadow: none;
+        flex-wrap: wrap;
+
+    }
+    #blue-div{
+        width: 100%;
+        max-width: 375px;
+        min-width: 375px;
+        border-radius: 0 0 1em 1em;
+        background-image: linear-gradient(rgb(120, 87, 255),hsl(241, 81%, 54%));
+        padding-bottom: 2em;
+    }
+    #white-div{
+
+        width: 100%;
+        max-width: 375px;
+        min-width: 375px;
+        padding-bottom: 30px;
+    }
+    .boxes-1{
+        line-height: 2.5em;
+    }  
+}
